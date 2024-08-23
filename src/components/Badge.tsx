@@ -51,14 +51,14 @@ export const Badge = (props: Props) => {
           {props.footer?.text ?? 'Powered by'}
           <a
             ref={liteBadge}
-            href={props.footer?.companyLink ?? 'https://nalar.net'}
+            href={props.footer?.companyLink ?? 'https://mubarokah.com/'}
             target="_blank"
             rel="noopener noreferrer"
             class="lite-badge"
             id="lite-badge"
             style={{ 'font-weight': 'bold', color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor }}
           >
-            <span>&nbsp;{props.footer?.company ?? 'Nalar AI x Flowise'}</span>
+            <span>&nbsp;{props.footer?.company ?? 'Mubarokah AI (based on Flowise)'}</span>
           </a>
         </span>
       </Show>

@@ -61,6 +61,28 @@ export const Badge = (props: Props) => {
             <span>&nbsp;{props.footer?.company ?? 'Mubarokah AI (based on Flowise)'}</span>
           </a>
         </span>
+
+        {/* Tambahkan div untuk pesan tambahan */}
+        <Show when={props.footer?.additionalMessage}>
+          <div
+            class="w-full text-center px-[10px] pt-[6px] pb-[10px] m-auto text-[12px]"
+            style={{
+              color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor,
+              'background-color': props.badgeBackgroundColor ?? '#ffffff',
+            }}
+          >
+            {props.footer?.additionalMessage}
+            <a
+              href={props.footer?.additionalLink ?? '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#1d754c', 'text-decoration': 'underline' }}  // Menggunakan 'text-decoration' yang sesuai
+            >
+              Kebijakan Privasi
+            </a>
+
+          </div>
+        </Show>
       </Show>
       <Show when={props.footer?.showFooter === false}>
         <span

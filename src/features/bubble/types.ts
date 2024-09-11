@@ -42,7 +42,11 @@ export type FooterTheme = {
   text?: string;
   company?: string;
   companyLink?: string;
+  // Menambahkan properti untuk pesan tambahan
+  additionalMessage?: string;
+  additionalLink?: string;
 };
+
 
 export type FeedbackTheme = {
   color?: string;

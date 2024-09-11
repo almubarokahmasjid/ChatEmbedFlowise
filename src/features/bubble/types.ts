@@ -47,7 +47,6 @@ export type FooterTheme = {
   additionalLink?: string;
 };
 
-
 export type FeedbackTheme = {
   color?: string;
 };

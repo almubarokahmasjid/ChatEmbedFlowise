@@ -76,11 +76,10 @@ export const Badge = (props: Props) => {
               href={props.footer?.additionalLink ?? '#'}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: '#1d754c', 'text-decoration': 'underline' }}  // Menggunakan 'text-decoration' yang sesuai
+              style={{ color: '#1d754c', 'text-decoration': 'underline' }} // Menggunakan 'text-decoration' yang sesuai
             >
               Kebijakan Privasi
             </a>
-
           </div>
         </Show>
       </Show>

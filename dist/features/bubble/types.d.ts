@@ -37,6 +37,8 @@ export type FooterTheme = {
     text?: string;
     company?: string;
     companyLink?: string;
+    additionalMessage?: string;
+    additionalLink?: string;
 };
 export type FeedbackTheme = {
     color?: string;
